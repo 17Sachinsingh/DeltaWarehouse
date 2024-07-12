@@ -5,7 +5,7 @@ namespace DeltaWarehouse.Controllers
 {
     public class ProductsController : Controller
     {
-        public List<ProductService> prod;
+        public List<ProductService> prod; // creating a list of type ProductService to store product details 
         public ProductsController()
         {
             prod = new List<ProductService>()
@@ -17,7 +17,7 @@ namespace DeltaWarehouse.Controllers
         }
         public IActionResult Index()
         {
-            return View(prod);
+            return View(prod); // returning product list to view 
         }
     }
 }

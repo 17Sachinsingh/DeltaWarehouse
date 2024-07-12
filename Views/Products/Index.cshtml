@@ -7,11 +7,11 @@
 <table class="table table-bordered table-responsive table-hover">
     <tr>
         <th>Product Id </th>
-        <th> Name </th>
+        <th> Name </th>`
         <th>Description </th>
         
     </tr>
-    @foreach (var d in Model)
+    @foreach (var d in Model) // will fetch every data from the model i.e Product Service 
     {
         <tr>
             <td>@d.ProductId</td>

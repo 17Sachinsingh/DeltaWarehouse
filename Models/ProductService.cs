@@ -1,5 +1,6 @@
 ﻿namespace DeltaWarehouse.Models
 {
+    //class to define model of the product 
     public class ProductService
     {
         public int ProductId { get; set; }
