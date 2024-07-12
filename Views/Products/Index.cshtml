@@ -8,7 +8,7 @@
 </head>
 <body class="fs-6">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> @* bootstrap classes for designing the nav bar *@
             <a class="navbar-brand fs-6" href="#">Deltaware</a>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -20,7 +20,7 @@
         </nav>
     </header>
     <main class="container">
-        @model IEnumerable<DeltaWarehouse.Models.ProductService>
+        @model IEnumerable<DeltaWarehouse.Models.ProductService> @* expecting a collection of data from model ProductServices *@
 
         @{
             ViewData["Title"] = "Products";
