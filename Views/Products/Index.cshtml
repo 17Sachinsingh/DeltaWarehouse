@@ -1,0 +1,24 @@
+﻿@model IEnumerable<DeltaWarehouse.Models.ProductService>
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1>Products</h1>
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Product Id </th>
+        <th> Name </th>
+        <th>Description </th>
+        
+    </tr>
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.ProductId</td>
+            <td>@d.Name</td>
+            <td>@d.Description</td>
+           
+        </tr>
+    }
+</table>
+
